@@ -45,3 +45,7 @@ function daftar() {
   
     alert("Pendaftaran berhasil!");
   }
+  // comingsoon
+  function comingsoon(){
+    alert("Coming Soon");
+  }
