@@ -6,7 +6,7 @@
     <title>Layanan Kesehatan</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="bg-gray-900">
     <!-- Navbar -->
 
     <nav class="bg-white border-gray-200 dark:bg-gray-900">
@@ -61,64 +61,151 @@
     </nav>
 
     <!-- Daftar Pemeriksaan Kesehatan -->
-    <section class="mx-auto p-16 bg-gray-700 shadow text-white">
+    <section class="mx-auto p-16 bg-white shadow dark:bg-gray-800 shadow text-white">
       <div class="flex flex-col md:flex-row items-center">
         <img src="img/checkup.png" alt="Pemeriksaan Kesehatan" class="w-full md:w-1/2 rounded-lg" />
         <div class="mt-6 md:mt-0 md:ml-6">
-          <h2 class="text-5xl font-semibold mb-4">Daftar Pemeriksaan Kesehatan</h2>
+          <h2 class="text-5xl font-extrabold mb-4">Daftar Pemeriksaan Kesehatan</h2>
           <p class="text-xl mb-4">Berbagai pilihan pemeriksaan kesehatan tersedia untuk Anda.</p>
-          <a href="#" class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-600">Pelajari Lebih Lanjut</a>
+          <a href="#" class="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Pelajari Lebih Lanjut</a>
         </div>
       </div>
     </section>
 
     <!-- Bagian Fitur -->
-    <section id="fitur" class="container mx-auto p-6 bg-white shadow rounded-lg">
-      <h2 class="text-2xl font-bold text-center mb-6">Fitur Utama</h2>
+    <section id="fitur" class="mx-auto p-6 pb-24 bg-gray-900">
+      <h1 class="my-9 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">Fitur Utama</h1>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="p-4 bg-blue-100 rounded-lg text-center">
-          <h3 class="font-bold text-lg">Fitur 1</h3>
-          <p>Deskripsi fitur pertama layanan kesehatan.</p>
+        <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <a href="#">
+            <img class="rounded-t-lg" src="img/konsul.png" alt="" />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Konsultasi Dokter</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Diskusi dengan dokter secara virtual melalui video call atau chat untuk mengidentifikasi gejala awal atau keluhan kesehatan.</p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              selengkapnya
+              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+              </svg>
+            </a>
+          </div>
         </div>
-        <div class="p-4 bg-blue-100 rounded-lg text-center">
-          <h3 class="font-bold text-lg">Fitur 2</h3>
-          <p>Deskripsi fitur kedua layanan kesehatan.</p>
+
+        <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <a href="#">
+            <img class="rounded-t-lg" src="img/skrining.png" alt="" />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Skrining Risiko Penyakit</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Penilaian risiko penyakit tertentu (misalnya, diabetes, hipertensi, atau penyakit jantung) melalui kuis atau tes kesehatan berbasis online..</p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              selengkapnya
+              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+              </svg>
+            </a>
+          </div>
         </div>
-        <div class="p-4 bg-blue-100 rounded-lg text-center">
-          <h3 class="font-bold text-lg">Fitur 3</h3>
-          <p>Deskripsi fitur ketiga layanan kesehatan.</p>
+
+        <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <a href="#">
+            <img class="rounded-t-lg" src="img/alat.png" alt="" />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Tes Kesehatan Mandiri</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Penggunaan perangkat medis portabel di rumah (misalnya, tensimeter digital, glucometer, atau pulse oximeter) untuk memantau: Tekanan darah, Kadar gula darah, Saturasi oksigen</p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              selengkapnya
+              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Formulir Pendaftaran -->
     <div class="bg-gray-900 text-black py-10" id="formulir">
-        <div class="w-full m-auto max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
-            <form class="space-y-7">
-                <h5 class="text-xl font-medium text-gray-900 dark:text-white">FORMULIR PENDAFTARAN</h5>
-                <div class="mb-5">
-                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
-                    <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@gmail.com" required />
-                </div>
-                <div class="mb-5">
-                    <label for="text" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">No HP</label>
-                    <input type="text" id="nohp" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="+62 / 089" required />
-                </div>
-                <div class="mb-5">
-                    <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama</label>
-                    <input type="text" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="nama" required />
-                </div>
-                <div class="mb-5">
-                    <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
-                    <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="password" required />
-                </div>
-                <div class="mb-5">
-                    <label for="password2" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ketik Ulang Password</label>
-                    <input type="password2" id="password2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="password" required />
-                </div>
-                <button type="button" onclick="daftar()" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Daftar Sekarang</button>
-            </form>
-        </div>
+      <h1 class="my-9 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">Segera Daftar!!</h1>
+      <div class="w-full m-auto max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+        <form class="space-y-7">
+          <h5 class="text-xl font-medium text-gray-900 dark:text-white">FORMULIR PENDAFTARAN</h5>
+          <div class="mb-5">
+            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="name@gmail.com"
+              required
+            />
+          </div>
+          <div class="mb-5">
+            <label for="number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">No HP</label>
+            <input
+              type="number"
+              id="nohp"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="+62 / 089"
+              required
+            />
+          </div>
+          <div class="mb-5">
+            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama</label>
+            <input
+              type="text"
+              id="name"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="nama"
+              required
+            />
+          </div>
+          <div class="mb-5">
+            <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+            <input
+              type="password"
+              id="password"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="password"
+              required
+            />
+          </div>
+          <div class="mb-5">
+            <label for="password2" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ketik Ulang Password</label>
+            <input
+              type="password"
+              id="password2"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="password"
+              required
+            />
+          </div>
+          <button
+            type="button"
+            onclick="daftar()"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Daftar Sekarang
+          </button>
+        </form>
+      </div>
     </div>
 
     <!-- Footer -->
@@ -134,13 +221,13 @@
             <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
           </li>
           <li>
-            <a href="#"><img src="https://img.icons8.com/?size=100&id=Y2GfpkgYNp42&format=png&color=9CA3AF" alt="" class="h-6 me-4 md:me-6"></a>
+            <a href="#"><img src="https://img.icons8.com/?size=100&id=Y2GfpkgYNp42&format=png&color=9CA3AF" alt="" class="h-6 me-4 md:me-6" /></a>
           </li>
           <li>
-            <a href="#"><img src="https://img.icons8.com/?size=100&id=62855&format=png&color=9CA3AF" alt="" class="h-6 me-4 md:me-6"></a>
+            <a href="#"><img src="https://img.icons8.com/?size=100&id=62855&format=png&color=9CA3AF" alt="" class="h-6 me-4 md:me-6" /></a>
           </li>
           <li>
-            <a href="#"><img src="https://img.icons8.com/?size=100&id=32309&format=png&color=9CA3AF" alt="" class="h-6"></a>
+            <a href="#"><img src="https://img.icons8.com/?size=100&id=32309&format=png&color=9CA3AF" alt="" class="h-6" /></a>
           </li>
         </ul>
       </div>
